@@ -1,16 +1,18 @@
 package machine;
 
+import java.math.BigDecimal;
+
 public class MachineMoneyHandlerPayment implements Payment {
 
-	private double amount;
+	private BigDecimal amount = new BigDecimal(0);
 	
 	@Override
-	public double amount() {
+	public BigDecimal amount() {
 		return this.amount;
 	}
 
 	@Override
-	public void setAmount(double amount) {
+	public void setAmount(BigDecimal amount) {
 		this.amount = amount;
 	}
 

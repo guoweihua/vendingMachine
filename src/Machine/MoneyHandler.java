@@ -1,12 +1,14 @@
 package machine;
 
+import java.math.BigDecimal;
+
 public interface MoneyHandler {
 
     public void receiveMoney(Payment payment);
 
-    public void changeMoney(double amountDispensed);
+    public void changeMoney(BigDecimal amountDispensed);
 
-    public double getAmount();
+    public BigDecimal getAmount();
 
 	public boolean verifyPayment(Payment payment);
 

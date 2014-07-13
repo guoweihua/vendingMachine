@@ -21,7 +21,7 @@ public class PaymentTest {
     Display display;
     
     @Mock
-    private Payment payment;
+    Payment payment;
     
     @Before
     public void setup() {
@@ -33,5 +33,5 @@ public class PaymentTest {
     	machine.receivedMoney(payment);
     	verify(handler).verifyPayment(payment);
     }
-	
+    
 }

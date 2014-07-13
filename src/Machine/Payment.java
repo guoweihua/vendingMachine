@@ -1,8 +1,12 @@
 package machine;
 
+import java.math.BigDecimal;
+
 public interface Payment {
 
-	public double amount();
+	String type = null;
+
+	public BigDecimal amount();
 	
-	public void setAmount(double amount);
+	public void setAmount(BigDecimal amount);
 }

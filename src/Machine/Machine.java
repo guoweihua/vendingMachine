@@ -1,5 +1,7 @@
 package machine;
 
+import java.math.BigDecimal;
+
 public class Machine {
 
     private Display display;
@@ -25,7 +27,7 @@ public class Machine {
     }
 
     public void changeMoney() {
-        moneyHandler.changeMoney(1.0);
+        moneyHandler.changeMoney(new BigDecimal(1.0));
         display.show("Please take your change.");
 
     }
